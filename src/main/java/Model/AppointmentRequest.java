@@ -41,11 +41,22 @@ public class AppointmentRequest {
         this.preferredDocs = preferredDocs;
     }
 
-    public Boolean getNew() {
+    public Boolean getIsNew() {
         return isNew;
     }
 
-    public void setNew(Boolean aNew) {
+    public void setIsNew(Boolean aNew) {
         isNew = aNew;
+    }
+
+    @Override
+    public String toString() {
+        return "AppointmentRequest{" +
+                "requestId=" + requestId +
+                ", personId=" + personId +
+                ", preferredDays=" + preferredDays +
+                ", preferredDocs=" + preferredDocs +
+                ", isNew=" + isNew +
+                '}';
     }
 }

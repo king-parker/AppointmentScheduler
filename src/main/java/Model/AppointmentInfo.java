@@ -30,11 +30,21 @@ public class AppointmentInfo {
         this.appointmentTime = appointmentTime;
     }
 
-    public Boolean getNewPatientAppointment() {
+    public Boolean getIsNewPatientAppointment() {
         return isNewPatientAppointment;
     }
 
-    public void setNewPatientAppointment(Boolean newPatientAppointment) {
+    public void setIsNewPatientAppointment(Boolean newPatientAppointment) {
         isNewPatientAppointment = newPatientAppointment;
+    }
+
+    @Override
+    public String toString() {
+        return "AppointmentInfo{" +
+                "doctorId=" + doctorId +
+                ", personId=" + personId +
+                ", appointmentTime='" + appointmentTime + '\'' +
+                ", isNewPatientAppointment=" + isNewPatientAppointment +
+                '}';
     }
 }

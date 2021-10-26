@@ -31,11 +31,11 @@ public class AppointmentInfoRequest {
         this.appointmentTime = appointmentTime;
     }
 
-    public Boolean getNewPatientAppointment() {
+    public Boolean getIsNewPatientAppointment() {
         return isNewPatientAppointment;
     }
 
-    public void setNewPatientAppointment(Boolean newPatientAppointment) {
+    public void setIsNewPatientAppointment(Boolean newPatientAppointment) {
         isNewPatientAppointment = newPatientAppointment;
     }
 
@@ -45,5 +45,16 @@ public class AppointmentInfoRequest {
 
     public void setRequestId(Integer requestId) {
         this.requestId = requestId;
+    }
+
+    @Override
+    public String toString() {
+        return "AppointmentInfoRequest{" +
+                "doctorId=" + doctorId +
+                ", personId=" + personId +
+                ", appointmentTime='" + appointmentTime + '\'' +
+                ", isNewPatientAppointment=" + isNewPatientAppointment +
+                ", requestId=" + requestId +
+                '}';
     }
 }
