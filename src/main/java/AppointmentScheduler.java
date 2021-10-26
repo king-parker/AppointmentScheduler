@@ -113,6 +113,10 @@ public class AppointmentScheduler {
             // Add appointment to schedule
             // response = postSchedule(token, appointment);
 
+            // Also add the appointment to the list of appointments for the associated person as well as the list
+            // for the associated doctor so the new appointment can be easily referenced for scheduling the next
+            // appointment.
+
             // Get next appointment request
             // response = getAppointmentRequest(token);
         }
